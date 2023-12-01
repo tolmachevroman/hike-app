@@ -14,6 +14,9 @@
 		208AC8842B19E80B001C917F /* HikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC8832B19E80B001C917F /* HikeTests.swift */; };
 		208AC88E2B19E80B001C917F /* HikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC88D2B19E80B001C917F /* HikeUITests.swift */; };
 		208AC8902B19E80B001C917F /* HikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC88F2B19E80B001C917F /* HikeUITestsLaunchTests.swift */; };
+		208AC89D2B19EBE9001C917F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC89C2B19EBE9001C917F /* CardView.swift */; };
+		208AC8A02B19ECF9001C917F /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC89F2B19ECF9001C917F /* CustomBackgroundView.swift */; };
+		208AC8A32B19F956001C917F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC8A22B19F956001C917F /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		208AC8892B19E80B001C917F /* HikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		208AC88D2B19E80B001C917F /* HikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeUITests.swift; sourceTree = "<group>"; };
 		208AC88F2B19E80B001C917F /* HikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		208AC89C2B19EBE9001C917F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		208AC89F2B19ECF9001C917F /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		208AC8A22B19F956001C917F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,12 @@
 		208AC8712B19E809001C917F /* Hike */ = {
 			isa = PBXGroup;
 			children = (
+				208AC8A12B19F935001C917F /* Utility */,
 				208AC8722B19E809001C917F /* HikeApp.swift */,
 				208AC8742B19E809001C917F /* ContentView.swift */,
 				208AC8762B19E80B001C917F /* Assets.xcassets */,
 				208AC8782B19E80B001C917F /* Preview Content */,
+				208AC89E2B19ECD6001C917F /* Component */,
 			);
 			path = Hike;
 			sourceTree = "<group>";
@@ -125,6 +133,23 @@
 				208AC88F2B19E80B001C917F /* HikeUITestsLaunchTests.swift */,
 			);
 			path = HikeUITests;
+			sourceTree = "<group>";
+		};
+		208AC89E2B19ECD6001C917F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				208AC89C2B19EBE9001C917F /* CardView.swift */,
+				208AC89F2B19ECF9001C917F /* CustomBackgroundView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		208AC8A12B19F935001C917F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				208AC8A22B19F956001C917F /* ColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				208AC8752B19E809001C917F /* ContentView.swift in Sources */,
+				208AC89D2B19EBE9001C917F /* CardView.swift in Sources */,
 				208AC8732B19E809001C917F /* HikeApp.swift in Sources */,
+				208AC8A02B19ECF9001C917F /* CustomBackgroundView.swift in Sources */,
+				208AC8A32B19F956001C917F /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
