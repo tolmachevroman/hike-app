@@ -19,8 +19,8 @@ struct CardView: View {
         repeat {
             randomNumber = Int.random(in: 1...5)
         } while randomNumber == imageNumber
-        
-        imageNumber = randomNumber
+                    
+                    imageNumber = randomNumber
     }
     
     var body: some View {
@@ -62,17 +62,12 @@ struct CardView: View {
                 // MARK: - MAIN CONTENT
                 
                 ZStack {
-                    Circle()
-                        .fill(
-                            LinearGradient(colors: [.colorIndigoMedium, .colorSalmonLight], startPoint: .topLeading,endPoint: .bottomTrailing
-                            )
-                        )
-                        .frame(width: 256, height: 256)
+                    CustomCircleView()
                     
                     Image("image-\(imageNumber)")
-                         .resizable()
-                         .scaledToFit()
-                         .animation(.default, value: imageNumber)
+                        .resizable()
+                        .scaledToFit()
+                        .animation(.default, value: imageNumber)
                 }
                 
                 // MARK: - FOOTER

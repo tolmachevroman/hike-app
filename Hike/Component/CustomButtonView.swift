@@ -27,7 +27,7 @@ struct CustomButtonView: View {
                 .foregroundStyle(
                     LinearGradient(colors: [.customGrayLight, .customGrayMedium], startPoint: .top, endPoint: .bottom)
                 )
-                
+            
         }
         .frame(width: 58, height: 58)
     }
