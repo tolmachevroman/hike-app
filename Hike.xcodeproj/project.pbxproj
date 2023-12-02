@@ -22,6 +22,7 @@
 		208AC8A92B1A549A001C917F /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC8A82B1A549A001C917F /* CustomCircleView.swift */; };
 		208AC8AB2B1A5904001C917F /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC8AA2B1A5904001C917F /* MotionAnimationView.swift */; };
 		208AC8AE2B1AAE76001C917F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC8AD2B1AAE76001C917F /* SettingsView.swift */; };
+		208AC8B02B1B31D2001C917F /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208AC8AF2B1B31D2001C917F /* CustomListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		208AC8A82B1A549A001C917F /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		208AC8AA2B1A5904001C917F /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		208AC8AD2B1AAE76001C917F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		208AC8AF2B1B31D2001C917F /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				208AC8A42B1A1204001C917F /* CustomButtonView.swift */,
 				208AC8A82B1A549A001C917F /* CustomCircleView.swift */,
 				208AC8AA2B1A5904001C917F /* MotionAnimationView.swift */,
+				208AC8AF2B1B31D2001C917F /* CustomListRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				208AC8752B19E809001C917F /* ContentView.swift in Sources */,
 				208AC8A92B1A549A001C917F /* CustomCircleView.swift in Sources */,
+				208AC8B02B1B31D2001C917F /* CustomListRowView.swift in Sources */,
 				208AC89D2B19EBE9001C917F /* CardView.swift in Sources */,
 				208AC8732B19E809001C917F /* HikeApp.swift in Sources */,
 				208AC8A52B1A1204001C917F /* CustomButtonView.swift in Sources */,
