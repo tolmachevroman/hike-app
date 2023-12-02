@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    //  MARK: - PROPERTIES
+    
+    private let alternateAppIcons: [String] = [
+        "AppIcon-Backpack",
+        "AppIcon-Camera",
+        "AppIcon-Campfire",
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom"
+    ]
+    
     var body: some View {
         List {
             // MARK: - SECTION: HEADER
@@ -59,7 +71,44 @@ struct SettingsView: View {
             
             // MARK: - SECTION: ICONS
             
+            Section(header: Text("Alternate Icons")) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(alternateAppIcons.indices, id: \.self) { item in
+                            Button {
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[item]) { error in
+                                    if error != nil {
+                                        print("Error changing the icon: \(String(describing: error?.localizedDescription))")
+                                    } else {
+                                        print("Success!")
+                                    }
+                                }
+                                
+                            } label: {
+                                Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                    }
+                }
+                .padding(.top, 12)
+                
+                Text("Choose your favorive app icon from the collection above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom, 12)
+            }
+            .listRowSeparator(.hidden)
+            
+            
             // MARK: - SECTION: ABOUT
+            
             Section(
                 header: Text("ABOUT THE APP"),
                 footer: HStack {
